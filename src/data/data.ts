@@ -2,6 +2,7 @@ import { planetImages } from './images'
 
 export const planets = [
     {
+        id: 1,
         name: 'Mercury',
         overview: {
             content:
@@ -31,6 +32,7 @@ export const planets = [
         sectionColor: 'hsl(194, 48%, 49%)'
     },
     {
+        id: 2,
         name: 'Venus',
         overview: {
             content:
@@ -60,6 +62,7 @@ export const planets = [
         sectionColor: 'hsl(33, 82%, 61%)'
     },
     {
+        id: 3,
         name: 'Earth',
         overview: {
             content:
@@ -89,6 +92,7 @@ export const planets = [
         sectionColor: 'hsl(263, 67%, 51%)'
     },
     {
+        id: 4,
         name: 'Mars',
         overview: {
             content:
@@ -118,6 +122,7 @@ export const planets = [
         sectionColor: 'hsl(10, 63%, 51%)'
     },
     {
+        id: 5,
         name: 'Jupiter',
         overview: {
             content:
@@ -147,6 +152,7 @@ export const planets = [
         sectionColor: 'hsl(2, 68%, 53%)'
     },
     {
+        id: 6,
         name: 'Saturn',
         overview: {
             content:
@@ -176,6 +182,7 @@ export const planets = [
         sectionColor: 'hsl(17, 73%, 46%)'
     },
     {
+        id: 7,
         name: 'Uranus',
         overview: {
             content:
@@ -205,6 +212,7 @@ export const planets = [
         sectionColor: 'hsl(169, 73%, 44%)'
     },
     {
+        id: 8,
         name: 'Neptune',
         overview: {
             content:
