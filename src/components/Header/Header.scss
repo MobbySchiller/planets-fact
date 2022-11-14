@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 16px;
+    background-color: transparent;
+    color: $white;
+    border-bottom: 1px solid $dark-gray;
+
+    @include mq(md) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    @include mq(xl) {
+        flex-direction: row;
+        height: 70px;
+    }
+}
+
+.logo {
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+
+    @include mq(md) {
+        margin: 12px 0;
+    }
+}
