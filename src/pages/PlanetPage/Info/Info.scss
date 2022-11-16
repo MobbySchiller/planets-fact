@@ -1,0 +1,45 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.info {
+    height: 250px;
+    padding-bottom: 24px;
+    color: $light-gray;
+    text-align: center;
+
+
+    @include mq(md) {
+        padding-right: 16px;
+        text-align: start;
+    }
+
+    @include mq(xl) {
+        padding-right: 0;
+    }
+}
+
+.info__name {
+    color: $white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+
+.info__content {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.info__source {
+    color: $dark-gray;
+    font-weight: 700;
+}
+
+.info__source-link {
+    margin-left: 2px;
+    color: $light-gray;
+    text-decoration: underline;
+}
+
+.info__source-icon {
+    margin-left: 2px;
+}

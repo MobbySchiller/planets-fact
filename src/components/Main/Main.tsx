@@ -1,5 +1,5 @@
 import React from 'react'
-import PlanetPage from '../../pages/PlanetPage'
+import PlanetPage from '../../pages/PlanetPage/PlanetPage'
 
 const Main: React.FC = () => {
 

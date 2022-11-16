@@ -1,0 +1,77 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.sections {
+    position: relative;
+    border-bottom: 1px solid $dark-gray;
+
+    @include mq(md) {
+        border-bottom: 0;
+    }
+}
+
+.sections__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    max-height: 200px;
+    list-style: none;
+
+    @include mq(md) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.section__element {
+    cursor: pointer;
+
+    @include mq(md) {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+.section__element-name {
+    padding: 12px 10px;
+    color: $light-gray;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    pointer-events: none;
+
+    @include mq(md) {
+        width: 100%;
+        padding: 14px;
+        border: 1px solid $light-gray;
+        color: $white;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    &--long {
+        display: none;
+
+        @include mq(md) {
+            display: block;
+        }
+    }
+
+    &--short {
+        @include mq(md) {
+            display: none;
+        }
+    }
+}
+
+.section__element-number {
+    padding-right: 12px;
+    color: $light-gray
+}

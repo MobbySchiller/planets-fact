@@ -1,0 +1,31 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+.image__pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75%;
+
+    @include mq(md) {
+        height: 85%;
+    }
+
+    @include mq(xl) {
+        height: 90%;
+    }
+}
+
+.image__pin {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40%;
+}
