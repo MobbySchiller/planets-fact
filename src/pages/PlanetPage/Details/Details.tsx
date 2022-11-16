@@ -13,10 +13,11 @@ const Details: React.FC<{ planet: Detail }> = ({ planet }) => {
     ]
 
     const DetailsJSX = details.map(detail => (
-        <div className='detail'>
+        <div
+            className='detail' >
             <span className='detail__title'>{detail.title}</span>
             <span className='detail__value'>{detail.value}</span>
-        </div>
+        </div >
     ))
 
     return (

@@ -6,6 +6,7 @@
     padding-bottom: 24px;
     color: $light-gray;
     text-align: center;
+    overflow: hidden;
 
 
     @include mq(md) {

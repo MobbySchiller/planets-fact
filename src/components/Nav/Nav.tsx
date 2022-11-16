@@ -66,9 +66,9 @@ const Nav: React.FC = () => {
             </div>
             <nav className='navigation' style={navIsActive ? { display: 'block' } : { display: 'none' }}>
                 <motion.ul
+                    variants={list}
                     initial="hidden"
                     animate={navIsActive ? "visible" : "hidden"}
-                    variants={list}
                     className='navigation__list'
                 >
                     {Elements}
