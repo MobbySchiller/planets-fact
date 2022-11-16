@@ -31,15 +31,11 @@ export interface Planet {
     sectionColor: string
 }
 
-const PlanetPage: React.FC = () => {
-    const { activePage } = usePlanetPageContext()
+const PlanetPage: React.FC<{ name: string }> = ({ name }) => {
     const [activeSection, setActiveSection] = useState<string>('overview')
 
-    const index = planets.findIndex(planet => planet.name.toLowerCase() === activePage)
+    const index = planets.findIndex(planet => planet.name === name)
     const planet = planets[index];
-
-
-    console.log(planet.name);
 
     return (
         <main className='planet'>

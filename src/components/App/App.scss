@@ -5,6 +5,7 @@
     width: 100%;
     background-color: $black;
     background-image: url('../../assets/images/background-stars.SVG');
+    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
 
     @include mq(md) {
