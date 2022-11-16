@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Nav from '../Nav/Nav'
 import './Header.scss'
 
 const Header: React.FC = () => {
     return (
         <header>
-            <span className='logo'>The Planets</span>
+            <Link to='/' className='logo'>The Planets</Link>
             <Nav />
         </header>
     )

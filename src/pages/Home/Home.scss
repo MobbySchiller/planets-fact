@@ -1,0 +1,166 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.orbits {
+    position: relative;
+    height: 100vh;
+}
+
+.orbit {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid $light-gray;
+    background-color: $black;
+    cursor: pointer;
+}
+
+.sun {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1/1;
+    width: 2%;
+    border-radius: 50%;
+    background-color: yellow;
+    z-index: 9;
+}
+
+.mercury {
+    width: 20%;
+    z-index: 8;
+
+    &:hover {
+        background-color: $mercury;
+    }
+
+    @include mq(md) {
+        width: 12%
+    }
+
+    @include mq(xl) {
+        width: 8%
+    }
+}
+
+.venus {
+    width: 30%;
+    z-index: 7;
+
+    &:hover {
+        background-color: $venus;
+    }
+
+    @include mq(md) {
+        width: 18%
+    }
+
+    @include mq(xl) {
+        width: 12%
+    }
+}
+
+.earth {
+    width: 40%;
+    z-index: 6;
+
+    &:hover {
+        background-color: $earth;
+    }
+
+    @include mq(md) {
+        width: 24%
+    }
+
+    @include mq(xl) {
+        width: 16%
+    }
+}
+
+.mars {
+    width: 50%;
+    z-index: 5;
+
+    &:hover {
+        background-color: $mars;
+    }
+
+    @include mq(md) {
+        width: 30%
+    }
+
+    @include mq(xl) {
+        width: 20%
+    }
+}
+
+.jupiter {
+    width: 60%;
+    z-index: 4;
+
+    &:hover {
+        background-color: $jupiter;
+    }
+
+    @include mq(md) {
+        width: 36%
+    }
+
+    @include mq(xl) {
+        width: 24%
+    }
+}
+
+.saturn {
+    width: 70%;
+    z-index: 3;
+
+    &:hover {
+        background-color: $saturn;
+    }
+
+    @include mq(md) {
+        width: 42%
+    }
+
+    @include mq(xl) {
+        width: 28%
+    }
+}
+
+.uranus {
+    width: 80%;
+    z-index: 2;
+
+    &:hover {
+        background-color: $uranus;
+    }
+
+    @include mq(md) {
+        width: 48%
+    }
+
+    @include mq(xl) {
+        width: 32%
+    }
+}
+
+.neptune {
+    width: 90%;
+
+    &:hover {
+        background-color: $neptune;
+    }
+
+    @include mq(md) {
+        width: 54%
+    }
+
+    @include mq(xl) {
+        width: 36%
+    }
+}
