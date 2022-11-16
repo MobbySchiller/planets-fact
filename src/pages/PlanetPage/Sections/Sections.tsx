@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { usePlanetPageContext } from '../../../context/PlanetPageContext'
 import './Sections.scss'
 
 const Sections: React.FC<{ color: string, state: any }> = ({ color, state }) => {
     const { activeSection, setActiveSection } = state
+    const { activePage } = usePlanetPageContext()
+
+    useEffect(() => setActiveSection('overview'), [activePage])
 
     const sections = [
         { id: '01', category: 'overview', name: 'overview', longName: 'overview' },

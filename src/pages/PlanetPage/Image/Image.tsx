@@ -19,7 +19,7 @@ const Image: React.FC<{ planet: Planet, section: string }> = ({ planet, section 
         visible: {
             x: 0,
             y: 0,
-            scale: 1
+            scale: 1,
         }
     }
 

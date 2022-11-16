@@ -27,7 +27,7 @@ export const planets = [
             rotation: '58.6 Days',
             revolution: '87.97 Days',
             radius: '2,439.7 KM',
-            temperature: '430°c'
+            temperature: '430 °c'
         },
         sectionColor: 'hsl(194, 48%, 49%)'
     },
@@ -57,7 +57,7 @@ export const planets = [
             rotation: '243 Days',
             revolution: '224.7 Days',
             radius: '6,051.8 KM',
-            temperature: '471°c'
+            temperature: '471 °c'
         },
         sectionColor: 'hsl(33, 82%, 61%)'
     },
@@ -87,7 +87,7 @@ export const planets = [
             rotation: '0.99 Days',
             revolution: '365.26 Days',
             radius: '6,371 KM',
-            temperature: '16°c'
+            temperature: '16 °c'
         },
         sectionColor: 'hsl(263, 67%, 51%)'
     },
@@ -117,7 +117,7 @@ export const planets = [
             rotation: '1.03 Days',
             revolution: '1.88 Years',
             radius: '3,389.5 KM',
-            temperature: '-28°c'
+            temperature: '-28 °c'
         },
         sectionColor: 'hsl(10, 63%, 51%)'
     },
@@ -147,7 +147,7 @@ export const planets = [
             rotation: '9.93 Hours',
             revolution: '11.86 Years',
             radius: '69,911 KM',
-            temperature: '-108°c'
+            temperature: '-108 °c'
         },
         sectionColor: 'hsl(2, 68%, 53%)'
     },
@@ -177,7 +177,7 @@ export const planets = [
             rotation: '10.8 Hours',
             revolution: '29.46 Years',
             radius: '58,232 KM',
-            temperature: '-138°c'
+            temperature: '-138 °c'
         },
         sectionColor: 'hsl(17, 73%, 46%)'
     },
@@ -207,7 +207,7 @@ export const planets = [
             rotation: '17.2 Hours',
             revolution: '84 Years',
             radius: '25,362 KM',
-            temperature: '-195°c'
+            temperature: '-195 °c'
         },
         sectionColor: 'hsl(169, 73%, 44%)'
     },
@@ -237,7 +237,7 @@ export const planets = [
             rotation: '16.08 Hours',
             revolution: '164.79 Years',
             radius: '24,622 KM',
-            temperature: '-201°c'
+            temperature: '-201 °c'
         },
         sectionColor: 'hsl(222, 87%, 56%)'
     }

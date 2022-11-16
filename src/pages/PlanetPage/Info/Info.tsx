@@ -47,7 +47,7 @@ const Info: React.FC<{ planet: Planet, section: string }> = ({ planet, section }
             <p
                 className='info__content'>{content}</p>
             <span className='info__source'>Source:
-                <a href={source} className='info__source-link'>Wikipedia
+                <a href={source} target='_blank' className='info__source-link'>Wikipedia
                     <FontAwesomeIcon className='info__source-icon' icon={faLink} /></a>
             </span>
         </motion.div>
