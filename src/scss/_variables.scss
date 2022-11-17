@@ -1,3 +1,7 @@
+@use 'sass:math';
+
+$sqrt: math.sqrt(2);
+
 $white: rgb(255, 255, 255);
 $black: rgb(7, 7, 36);
 $dark-gray: rgb(56, 56, 79);
@@ -11,6 +15,15 @@ $jupiter: hsl(2, 68%, 53%);
 $saturn: hsl(17, 73%, 46%);
 $uranus: hsl(169, 73%, 44%);
 $neptune: hsl(222, 87%, 56%);
+
+$mercury-revolution: 2.41s;
+$venus-revolution: 22.16s;
+$earth-revolution: 36.5s;
+$mars-revolution: 68.62s;
+$jupiter-revolution: 432.89s;
+$saturn-revolution: 1075.29s;
+$uranus-revolution: 3066s;
+$neptun-revolution: 6014.84s;
 
 $breakpoints: (
     xs: 0,

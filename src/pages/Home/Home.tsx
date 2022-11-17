@@ -1,20 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { planets } from '../../data/data'
 import './Home.scss'
 
 const Home: React.FC = () => {
+    const [planetHovered, setPlanetHovered] = useState<string>('')
+
+    const Planets = planets.map(planet => {
+        const name = planet.name.toLowerCase()
+
+        const handleHover = () => setPlanetHovered(name)
+        const handleUnhover = () => setPlanetHovered('')
+
+        return (
+            <NavLink
+                to={`/${name}`} className={`${name} orbit`}
+                onMouseEnter={handleHover}
+                onMouseLeave={handleUnhover}>
+                <div className={`${name}__square`}>
+                    <div className={`${name}__planet`}></div>
+                </div>
+            </NavLink>
+        )
+    })
+
+
     return (
-        <div className='orbits'>
-            <NavLink to='/neptune' className='neptune orbit'></NavLink>
-            <NavLink to='/uranus' className='uranus orbit'></NavLink>
-            <NavLink to='/saturn' className='saturn orbit'></NavLink>
-            <NavLink to='/jupiter' className='jupiter orbit'></NavLink>
-            <NavLink to='/mars' className='mars orbit'></NavLink>
-            <NavLink to='/earth' className='earth orbit'></NavLink>
-            <NavLink to='/venus' className='venus orbit'></NavLink>
-            <NavLink to='/mercury' className='mercury orbit'></NavLink>
-            <div className='sun'></div>
-        </div>
+        <>
+            <div className='orbits'>
+                {Planets}
+                <div className='sun'></div>
+            </div>
+            {planetHovered && <p className='planet-name'>{planetHovered}</p>}
+        </>
     )
 }
 

@@ -3,12 +3,12 @@
 
 .orbits {
     position: relative;
-    height: 100vh;
+    height: 90vh;
 }
 
 .orbit {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     aspect-ratio: 1/1;
@@ -20,13 +20,16 @@
 
 .sun {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     aspect-ratio: 1/1;
-    width: 2%;
+    width: 4%;
     border-radius: 50%;
-    background-color: yellow;
+    background-image: url('../../assets/images/sun.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: 9;
 }
 
@@ -45,6 +48,15 @@
     @include mq(xl) {
         width: 8%
     }
+
+    &__square {
+        animation: revolution $mercury-revolution linear infinite;
+        @include square(160)
+    }
+
+    &__planet {
+        @include planet('mercury', 16%)
+    }
 }
 
 .venus {
@@ -61,6 +73,15 @@
 
     @include mq(xl) {
         width: 12%
+    }
+
+    &__square {
+        animation: revolution $venus-revolution linear infinite;
+        @include square(115)
+    }
+
+    &__planet {
+        @include planet('venus', 17%)
     }
 }
 
@@ -79,6 +100,15 @@
     @include mq(xl) {
         width: 16%
     }
+
+    &__square {
+        animation: revolution $earth-revolution linear infinite;
+        @include square()
+    }
+
+    &__planet {
+        @include planet('earth', 14%)
+    }
 }
 
 .mars {
@@ -95,6 +125,15 @@
 
     @include mq(xl) {
         width: 20%
+    }
+
+    &__square {
+        animation: revolution $mars-revolution linear infinite;
+        @include square(270);
+    }
+
+    &__planet {
+        @include planet('mars', 9%)
     }
 }
 
@@ -113,6 +152,15 @@
     @include mq(xl) {
         width: 24%
     }
+
+    &__square {
+        animation: revolution $jupiter-revolution linear infinite;
+        @include square(210)
+    }
+
+    &__planet {
+        @include planet('jupiter', 18%)
+    }
 }
 
 .saturn {
@@ -129,6 +177,15 @@
 
     @include mq(xl) {
         width: 28%
+    }
+
+    &__square {
+        animation: revolution $saturn-revolution linear infinite;
+        @include square(60)
+    }
+
+    &__planet {
+        @include planet('saturn', 17%)
     }
 }
 
@@ -147,6 +204,15 @@
     @include mq(xl) {
         width: 32%
     }
+
+    &__square {
+        animation: revolution $uranus-revolution linear infinite;
+        @include square(190)
+    }
+
+    &__planet {
+        @include planet('uranus', 9%)
+    }
 }
 
 .neptune {
@@ -162,5 +228,35 @@
 
     @include mq(xl) {
         width: 36%
+    }
+
+    &__square {
+        animation: revolution 6014.84s linear infinite;
+        @include square(20);
+    }
+
+    &__planet {
+        @include planet('neptune', 7%)
+    }
+}
+
+.planet-name {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@keyframes revolution {
+    from {
+        transform: translate(-50%, -50%) rotate(135deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(495deg);
     }
 }
