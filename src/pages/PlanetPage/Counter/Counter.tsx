@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from 'react'
 import { animate } from 'framer-motion'
 
+
 const Counter: React.FC<{ from: number, to: number }> = ({ from, to }) => {
-    const nodeRef = useRef()
+    const nodeRef = useRef<HTMLSpanElement>(null)
     useEffect(() => {
         const node: any = nodeRef.current
         const controls = animate(from, to, {

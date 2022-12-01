@@ -10,7 +10,7 @@ import './PlanetPage.scss'
 interface Section {
     content: string
     source: string
-    image: string
+    image?: string
     geo?: string
 }
 

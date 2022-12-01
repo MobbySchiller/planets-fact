@@ -3,11 +3,9 @@ import { usePlanetPageContext } from '../../../context/PlanetPageContext'
 import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
-import { Planet } from '../PlanetPage'
 import './Info.scss'
 
-
-const Info: React.FC<{ planet: Planet, section: string }> = ({ planet, section }) => {
+const Info: React.FC<{ planet: any, section: string }> = ({ planet, section }) => {
     const { name } = planet
     const { content, source } = planet[section]
     const [canAnimate, setCanAnimate] = useState<boolean>(true)

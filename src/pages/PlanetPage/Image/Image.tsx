@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { usePlanetPageContext } from '../../../context/PlanetPageContext'
-import { Planet } from '../PlanetPage'
 import './Image.scss'
 
-const Image: React.FC<{ planet: Planet, section: string }> = ({ planet, section }) => {
+const Image: React.FC<{ planet: any, section: string }> = ({ planet, section }) => {
     const { name } = planet
     const { image, geo } = planet[section]
     const [canAnimate, setCanAnimate] = useState<boolean>(true)
