@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
     const [navIsActive, setNavIsActive] = useState<boolean>(false)
     const { setActivePage } = usePlanetPageContext()
 
-    const handleLink = (e) => {
+    const handleLink = (e: any) => {
         setActivePage(e.target.id)
         window.innerWidth >= Breakpoint.Tablet ? undefined : setNavIsActive(!navIsActive)
     }
@@ -47,7 +47,7 @@ const Nav: React.FC = () => {
                 key={planet.id}
                 className='navigation__element' >
                 <NavLink
-                    to={`${planetLower}`}
+                    to={`/${planetLower}`}
                     id={planetLower}
                     className={({ isActive }) =>
                         'navigation__link' + (isActive ? ' navigation__link--active' : '')}

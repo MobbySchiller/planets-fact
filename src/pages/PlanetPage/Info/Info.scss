@@ -2,8 +2,8 @@
 @import '../../../scss/mixins';
 
 .info {
-    height: 250px;
-    padding-bottom: 24px;
+    min-height: 250px;
+    margin-bottom: 20px;
     color: $light-gray;
     text-align: center;
     overflow: hidden;
@@ -15,6 +15,7 @@
     }
 
     @include mq(xl) {
+        margin-bottom: 0;
         padding-right: 0;
     }
 }

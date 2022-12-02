@@ -8,7 +8,7 @@
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
 
-    @include mq(md) {
+    @include mq(xl) {
         height: 100vh;
     }
 }

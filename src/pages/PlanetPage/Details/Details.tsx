@@ -8,10 +8,10 @@ const Details: React.FC<{ planet: Detail }> = ({ planet }) => {
     const { rotation, revolution, radius, temperature } = planet
 
     const details = [
-        { title: 'rotation time', value: rotation },
-        { title: 'revolution time', value: revolution },
-        { title: 'radius', value: radius },
-        { title: 'average temp.', value: temperature }
+        { id: 1, title: 'rotation time', value: rotation },
+        { id: 2, title: 'revolution time', value: revolution },
+        { id: 3, title: 'radius', value: radius },
+        { id: 4, title: 'average temp.', value: temperature }
     ]
 
     const DetailsJSX = details.map(detail => {
@@ -21,6 +21,7 @@ const Details: React.FC<{ planet: Detail }> = ({ planet }) => {
 
         return (
             <div
+                key={detail.id}
                 className='detail' >
                 <span className='detail__title'>{detail.title}</span>
                 <span className='detail__value'><Counter from={0} to={Number(value)} /> {unit}</span>

@@ -7,7 +7,7 @@ import './scss/styles.scss'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/planets-facts'>
       <App />
     </BrowserRouter>
   </React.StrictMode>

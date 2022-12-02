@@ -18,7 +18,6 @@ const Main: React.FC = () => {
             <Route path='/' element={<Home />} />
             {Pages}
         </Routes>
-        // <PlanetPage />
     )
 }
 
